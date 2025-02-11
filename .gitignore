@@ -1,0 +1,115 @@
+# =========================
+# GENERAL SETTINGS
+# =========================
+# Ignore system-generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+*.lnk
+
+# Ignore logs, temp, and cache files
+*.log
+*.cache
+*.bak
+*.swp
+*.swo
+*.swn
+*.tmp
+
+# =========================
+# WINDOWS-SPECIFIC FILES
+# =========================
+# Windows generated files
+desktop.ini
+$RECYCLE.BIN/
+System Volume Information/
+*.bat
+*.cmd
+*.exe
+*.msi
+*.dll
+
+# =========================
+# WSL/Linux-SPECIFIC FILES
+# =========================
+# WSL & Linux system files
+*.pid
+*.sock
+*.lock
+*.db-wal
+*.db-shm
+nohup.out
+
+# =========================
+# PYTHON & VENV FILES
+# =========================
+# Python compiled files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Virtual environments
+.env/
+.venv/
+env/
+venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# =========================
+# AIRFLOW FILES
+# =========================
+# Airflow database and logs
+airflow.cfg
+airflow.db
+logs/
+*.db
+*.sqlite
+
+# =========================
+# SNOWFLAKE & SQL FILES
+# =========================
+# Snowflake query history or generated files
+*.sql-journal
+*.query_history
+
+# =========================
+# GIT & IDE CONFIG FILES
+# =========================
+# Git metadata
+.git/
+
+# VSCode settings
+.vscode/
+*.code-workspace
+
+# JetBrains IDE (PyCharm, IntelliJ)
+.idea/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# =========================
+# SECURITY & CREDENTIALS
+# =========================
+# Ignore environment variables and credentials
+*.env
+.envrc
+*.secrets
+*.key
+*.pem
+*.crt
+config.json
+secrets.json
+credentials.json
+.env.local
+
+# Ignore any accidental CSV/Excel data exports
+*.csv
+*.xls
+*.xlsx
+*.json
+
