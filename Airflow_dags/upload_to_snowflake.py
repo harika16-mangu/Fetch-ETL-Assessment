@@ -18,14 +18,14 @@ dag = DAG(
 )
 # Extracting the File paths
 CSV_FILES ={
-    #"users": "/mnt/c/Users/harik/Downloads/fetch/structured_users.csv",
-    #"brands": "/mnt/c/Users/harik/Downloads/fetch/structured_brands.csv",
-    #"receipts": "/mnt/c/Users/harik/Downloads/fetch/normalized_receipts.csv",
-    #"items": "/mnt/c/Users/harik/Downloads/fetch/normalized_items.csv",
+    "users": "/mnt/c/Users/harik/Downloads/fetch/structured_users.csv",
+    "brands": "/mnt/c/Users/harik/Downloads/fetch/structured_brands.csv",
+    "receipts": "/mnt/c/Users/harik/Downloads/fetch/normalized_receipts.csv",
+    "items": "/mnt/c/Users/harik/Downloads/fetch/normalized_items.csv",
     "products": "/mnt/c/Users/harik/Downloads/fetch/normalized_products.csv",
-    #"rewards": "/mnt/c/Users/harik/Downloads/fetch/normalized_rewards.csv",
-    #"user_flagged": "/mnt/c/Users/harik/Downloads/fetch/normalized_user_flagged.csv",
-    #"metabrite": "/mnt/c/Users/harik/Downloads/fetch/normalized_metabrite.csv"
+    "rewards": "/mnt/c/Users/harik/Downloads/fetch/normalized_rewards.csv",
+    "user_flagged": "/mnt/c/Users/harik/Downloads/fetch/normalized_user_flagged.csv",
+    "metabrite": "/mnt/c/Users/harik/Downloads/fetch/normalized_metabrite.csv"
 }
 
 # Snowflake table mappings
