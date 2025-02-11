@@ -1,0 +1,10 @@
+apache-airflow==2.7.2
+apache-airflow-providers-snowflake==3.6.1
+snowflake-connector-python==3.6.0
+pandas==2.0.3
+numpy==1.23.5
+sqlalchemy==2.0.15
+flask==3.0.0
+requests==2.31.0
+pyarrow==13.0.0
+notebook==7.0.0
