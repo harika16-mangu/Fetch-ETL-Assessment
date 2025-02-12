@@ -49,11 +49,11 @@ Install Required Tools
 ### 5.Installation Guide
 1. Clone the Repository<br>
 ![Image](https://github.com/user-attachments/assets/97a1d43f-c61d-46d5-b581-c24fd6a03fa0)
-![Image](https://github.com/user-attachments/assets/b493506e-779d-4a50-8f51-024f7a15d0eb)
+![Image](https://github.com/user-attachments/assets/2db4800d-0444-4de5-9ca9-8bb80eef60df)
 2. Create and Activate a Virtual Environment<br>
 ![Image](https://github.com/user-attachments/assets/06d94ab0-39d0-4114-a8cf-4628d12a1a2c)
 3. Install Dependencies<br>
-![Image](https://github.com/user-attachments/assets/2db4800d-0444-4de5-9ca9-8bb80eef60df)
+![Image](https://github.com/user-attachments/assets/b493506e-779d-4a50-8f51-024f7a15d0eb)
 
 
 ### 6.Setup Apache Airflow
