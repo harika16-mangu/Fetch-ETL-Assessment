@@ -81,6 +81,9 @@ Please refer to E-R Diagram for detailed understanding of entities and relations
 ![Image](https://github.com/user-attachments/assets/06d94ab0-39d0-4114-a8cf-4628d12a1a2c)
 
 ### 7.Run the ETL Pipeline
+**Note:**The file paths in this project are configured for a WSL environment (e.g., /mnt/c/Users/<your_username>/Downloads/fetch/...). Please update these paths in the CSV_FILES dictionary in the upload_to_snowflake DAG to match the location of your CSV files on your local machine.
+If you’re using WSL, ensure you include the /mnt/c/ prefix to access Windows directories.
+If you’re not using WSL, provide absolute paths based on your operating system's directory structure.
 Once Airflow is running, trigger the ETL DAG from the UI.<br>
 1. Open Airflow UI at http://localhost:8080<br>
 2. Find the DAG named ETL<br>
