@@ -49,19 +49,20 @@ Install Required Tools
 ### 5.Installation Guide
 1. Clone the Repository<br>
 ![Image](https://github.com/user-attachments/assets/97a1d43f-c61d-46d5-b581-c24fd6a03fa0)
-![current directory](image-1.png)
+![Image](https://github.com/user-attachments/assets/b493506e-779d-4a50-8f51-024f7a15d0eb)
 2. Create and Activate a Virtual Environment<br>
-![Virtual Environment](image-2.png)
+![Image](https://github.com/user-attachments/assets/06d94ab0-39d0-4114-a8cf-4628d12a1a2c)
 3. Install Dependencies<br>
-![Install Dependencies](image-3.png)
+![Image](https://github.com/user-attachments/assets/2db4800d-0444-4de5-9ca9-8bb80eef60df)
+
 
 ### 6.Setup Apache Airflow
 1. Initialize Airflow<br>
-![Initializing db and airflow](image-4.png)
+![Image](https://github.com/user-attachments/assets/103ef493-8be0-41c0-b315-358e2ebd6f40)
 2. Start Airflow Webserver & Scheduler<br>
-![Connect to port:8080](image-5.png)
+![Image](https://github.com/user-attachments/assets/4e633e39-1d85-4e72-a94d-0c06449bb3f3)
 3. Add Snowflake Connection in Airflow<br>
-![SnowflakeConnection](image-6.png)
+![Image](https://github.com/user-attachments/assets/5bb6a633-85ef-4bba-bc81-dbff3c218493)
 
 ### 7.Run the ETL Pipeline
 Once Airflow is running, trigger the ETL DAG from the UI.<br>
