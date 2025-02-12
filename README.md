@@ -31,7 +31,7 @@ Workflow:
 3. Data Warehousing & Transformation: Stored, transformed, and performed data quality checks and basic data analysis using SQL in Snowflake.<br>
 4. Visualization & Dashboarding: Visualized the transformed data and created interactive dashboards using Tableau.<br>
 
-*Please check the Architecture_Workflow diagram for detailed workflow*
+**Please check the Architecture_Workflow diagram for detailed workflow** -Refer Architecture_Workflow diagram
 
 ### 3.Prerequisites
 Install Required Tools
@@ -79,6 +79,7 @@ For full quality checks, please refer to **SQL_queries/Data Quality Checks/** fo
 
 
 ### 10.Setup Tableau for Visualization<br>
+**Please refer Fetch rewards tableau dashboard.png for dashboard insights**</br>
 1. Open Tableau Desktop<br>
 2. Click Connect to a Server -> Snowflake<br>
 3. Enter your Snowflake credentials<br>
