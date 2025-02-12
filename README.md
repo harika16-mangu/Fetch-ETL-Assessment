@@ -48,7 +48,7 @@ Install Required Tools
 
 ### 5.Installation Guide
 1. Clone the Repository<br>
-![Cloning Git Repo in WSL](image.png)
+![Image](https://github.com/user-attachments/assets/97a1d43f-c61d-46d5-b581-c24fd6a03fa0)
 ![current directory](image-1.png)
 2. Create and Activate a Virtual Environment<br>
 ![Virtual Environment](image-2.png)
