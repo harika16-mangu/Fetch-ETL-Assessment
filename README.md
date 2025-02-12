@@ -25,10 +25,10 @@
 ### 2.Description:
 This project demonstrates the ETL pipeline that extract data from raw json files to driving business insights and recommendations
 Workflow:
-1. **Data Integration**: Extracted data from JSON sources and transformed/normalized it to structured CSV files using Python in Jupyter notebook.<br>
-2. **Data Orchestration**: Utilized Apache Airflow to orchestrate the structured normalized CSV files through scheduled ETL pipelines to Snowflake.<br>
-3. **Data Warehousing & Transformation**: Stored, transformed, and performed data quality checks and basic data analysis using SQL in Snowflake.<br>
-4. **Visualization & Dashboarding**: Visualized the transformed data and created interactive dashboards using Tableau.<br>
+1. Data Integration: Extracted data from JSON sources and transformed/normalized it to structured CSV files using Python in Jupyter notebook.<br>
+2. Data Orchestration: Utilized Apache Airflow to orchestrate the structured normalized CSV files through scheduled ETL pipelines to Snowflake.<br>
+3. Data Warehousing & Transformation: Stored, transformed, and performed data quality checks and basic data analysis using SQL in Snowflake.<br>
+4. Visualization & Dashboarding: Visualized the transformed data and created interactive dashboards using Tableau.<br>
 
 *Please check the Architecture_Workflow diagram for detailed workflow*
 
@@ -51,7 +51,7 @@ Install Required Tools
 ![Image](https://github.com/user-attachments/assets/97a1d43f-c61d-46d5-b581-c24fd6a03fa0)
 ![Image](https://github.com/user-attachments/assets/2db4800d-0444-4de5-9ca9-8bb80eef60df)
 2. Create and Activate a Virtual Environment<br>
-![Image](https://github.com/user-attachments/assets/103ef493-8be0-41c0-b315-358e2ebd6f40)
+![Image](https://github.com/user-attachments/assets/dd62b510-7e76-4f9f-84b3-990d7cd0b211)
 3. Install Dependencies<br>
 ![Image](https://github.com/user-attachments/assets/4e633e39-1d85-4e72-a94d-0c06449bb3f3)
 
