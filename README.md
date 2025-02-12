@@ -5,6 +5,7 @@
 <a name="2.Description"></a>
 <a name="3.Prerequisites"></a>
 <a name="4.Run Data transformation (Jupyter Notebook)"></a>
+<a name="Data modeling/ E-R Diagram"></a>
 <a name="5.Installation Guide"></a>
 <a name="6.Setup Apache Airflow"></a>
 <a name="7.Run the ETL pipeline"></a>
@@ -46,6 +47,9 @@ Install Required Tools
 3.Save the CSV files and proceed downloading for future references.
 ***Explanation: Given json files users,brands,receipts are future normalized until 3NF,this resulted in creation of 8 tables users,brands,receipts,receipt_items,products,rewards,userflagged_items,metabrite_items.***
 
+### Data modeling/ E-R Diagram
+Please refer to E-R Diagram for detailed understanding of entities and relationships between tables
+
 ### 5.Installation Guide
 1. Clone the Repository
 ![Cloning Git Repo in WSL](image.png)
@@ -54,6 +58,7 @@ Install Required Tools
 ![Virtual Environment](image-2.png)
 3. Install Dependencies
 ![Install Dependencies](image-3.png)
+![alt text](image.png)
 
 ### 6.Setup Apache Airflow
 1. Initialize Airflow
