@@ -41,28 +41,28 @@ Install Required Tools
 5. Tableau Desktop -[Download](https://www.tableau.com/support/releases)<br>
 
 ### 4.Run Data transformation (Jupyter Notebook)
-1.Open notebooks/json_to_csv_datatransformation.ipynb<br>
-2.This notebook is specially designed to handle data extraction and flatten unstructure json data into structured CSV. This code will also perform transformation of data before pipelining<br>
-3.Save the CSV files and proceed downloading for future references.<br>
-***Explanation: Given json files users,brands,receipts are future normalized until 3NF,this resulted in creation of 8 tables users,brands,receipts,receipt_items,products,rewards,userflagged_items,metabrite_items.***<br>
+1. Open notebooks/json_to_csv_datatransformation.ipynb<br>
+2. This notebook is specially designed to handle data extraction and flatten unstructure json data into structured CSV. This code will also perform transformation of data before pipelining<br>
+3. Save the CSV files and proceed downloading for future references.<br>
+**Explanation: Given json files users,brands,receipts are future normalized until 3NF,this resulted in creation of 8 tables users,brands,receipts,receipt_items,products,rewards,userflagged_items,metabrite_items.**<br>
 
 ### 5.Installation Guide
 1. Clone the Repository<br>
 ![Image](https://github.com/user-attachments/assets/97a1d43f-c61d-46d5-b581-c24fd6a03fa0)
 ![Image](https://github.com/user-attachments/assets/2db4800d-0444-4de5-9ca9-8bb80eef60df)
 2. Create and Activate a Virtual Environment<br>
-![Image](https://github.com/user-attachments/assets/06d94ab0-39d0-4114-a8cf-4628d12a1a2c)
+![Image](https://github.com/user-attachments/assets/103ef493-8be0-41c0-b315-358e2ebd6f40)
 3. Install Dependencies<br>
-![Image](https://github.com/user-attachments/assets/b493506e-779d-4a50-8f51-024f7a15d0eb)
+![Image](https://github.com/user-attachments/assets/4e633e39-1d85-4e72-a94d-0c06449bb3f3)
 
 
 ### 6.Setup Apache Airflow
 1. Initialize Airflow<br>
-![Image](https://github.com/user-attachments/assets/103ef493-8be0-41c0-b315-358e2ebd6f40)
-2. Start Airflow Webserver & Scheduler<br>
-![Image](https://github.com/user-attachments/assets/4e633e39-1d85-4e72-a94d-0c06449bb3f3)
-3. Add Snowflake Connection in Airflow<br>
 ![Image](https://github.com/user-attachments/assets/5bb6a633-85ef-4bba-bc81-dbff3c218493)
+2. Start Airflow Webserver & Scheduler<br>
+![Image](https://github.com/user-attachments/assets/b493506e-779d-4a50-8f51-024f7a15d0eb)
+3. Add Snowflake Connection in Airflow<br>
+![Image](https://github.com/user-attachments/assets/06d94ab0-39d0-4114-a8cf-4628d12a1a2c)
 
 ### 7.Run the ETL Pipeline
 Once Airflow is running, trigger the ETL DAG from the UI.<br>
