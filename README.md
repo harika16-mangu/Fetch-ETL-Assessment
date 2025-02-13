@@ -1,8 +1,8 @@
 # Fetch-ETL-Pipelining
 
 ### Table of Contents
-[1.Tech Stack](#-1.Tech-Stack:)<br>
-[2.Description](###-2.Description:)<br>
+[1.Tech Stack](###-1.Tech-stack)<br>
+[2.Description](###-2.Description)<br>
 [3.Prerequisites](###-3.Prerequisites)<br>
 [4.Run Data transformation (Jupyter Notebook)](###-4.Run-Data-transformation-(Jupyter-Notebook))<br>
 [Data modeling/ E-R Diagram](###-Data-modeling/-E-R-Diagram)<br>
