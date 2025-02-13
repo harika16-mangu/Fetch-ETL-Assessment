@@ -34,7 +34,7 @@ WITH duplicates AS (
     BRAND_ID,
     NAME,
     ROW_NUMBER() OVER (PARTITION BY BRAND_ID,NAME ORDER BY BRAND_ID) AS rn
-  FROM analytics.public.BRANDS_BACKUP
+  FROM analytics.public.BRANDS
 )
 SELECT * FROM duplicates WHERE rn > 1
 
@@ -72,7 +72,7 @@ WITH duplicates AS (
   SELECT
     RECEIPT_ID,
     ROW_NUMBER() OVER (PARTITION BY RECEIPT_ID ORDER BY RECEIPT_ID) AS rn
-  FROM analytics.public.RECEIPTS_ITEM_BACKUP
+  FROM analytics.public.RECEIPT_ITEMS
 )
 SELECT * FROM duplicates WHERE rn > 1
 
