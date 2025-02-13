@@ -1,20 +1,20 @@
 # Fetch-ETL-Pipelining
 
 ### Table of Contents
-[1.Tech Stack](1.Tech Stack)
-[2.Description](2.Description)
-[3.Prerequisites](3.Prerequisites)
-[4.Run Data transformation (Jupyter Notebook)](4.Run Data transformation (Jupyter Notebook)
-[Data modeling/ E-R Diagram](Data modeling/ E-R Diagram)
-[5.Installation Guide](5.Installation Guide)
-[6.Setup Apache Airflow](6.Setup Apache Airflow)
-[7.Run the ETL pipeline](7.Run the ETL pipeline)
-[8.Verify data in Snowflake](8.Verify data in Snowflake)
-[9.Run Data Quality Checks](9.Run Data Quality Checks)
-[10.Setup Tableau for Visualization](10.Setup Tableau for Visualization)
-[11.Second: Answering Stakeholder questions](11.Second: Answering Stakeholder questions)
-[12.Fourth: Communicate with Stakeholders](12.Fourth: Communicate with Stakeholders)
-[13.Conclusion](13.Conclusion)
+[1.Tech Stack](###-1.Tech-Stack)
+[2.Description](###-2.Description)
+[3.Prerequisites](###-3.Prerequisites)
+[4.Run Data transformation (Jupyter Notebook)](###-4.Run-Data-transformation-(Jupyter-Notebook))
+[Data modeling/ E-R Diagram](###-Data-modeling/-E-R-Diagram)
+[5.Installation Guide](###-5.Installation-Guide)
+[6.Setup Apache Airflow](###-6.Setup-Apache-Airflow)
+[7.Run the ETL pipeline](###-7.Run-the-ETL-pipeline)
+[8.Verify data in Snowflake](###-8.Verify-data-in-Snowflake)
+[9.Run Data Quality Checks](###-9.Run-Data-Quality-Checks)
+[10.Setup Tableau for Visualization](###-10.Setup-Tableau-for-Visualization)
+[11.Second: Answering Stakeholder questions](###-11.Second:-Answering-Stakeholder-questions)
+[12.Fourth: Communicate with Stakeholders](###-12.Fourth:-Communicate-with-Stakeholders)
+[13.Conclusion](###-13.Conclusion)
 
 ### Project Title:
 * End-to-End ETL Pipelining *
