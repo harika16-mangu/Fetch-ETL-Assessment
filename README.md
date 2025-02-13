@@ -1,20 +1,20 @@
 # Fetch-ETL-Pipelining
 
 ### Table of Contents
-[1.Tech Stack](1.techstack)
-<a name="2.Description"></a>
-<a name="3.Prerequisites"></a>
-<a name="4.Run Data transformation (Jupyter Notebook)"></a>
-<a name="Data modeling/ E-R Diagram"></a>
-<a name="5.Installation Guide"></a>
-<a name="6.Setup Apache Airflow"></a>
-<a name="7.Run the ETL pipeline"></a>
-<a name="8.Verify data in Snowflake"></a>
-<a name="9.Run Data Quality Checks"></a>
-<a name="10.Setup Tableau for Visualization"></a>
-<a name="11.Second: Answering Stakeholder questions"></a>
-<a name="12.Fourth: Communicate with Stakeholders"></a>
-<a name="13.Conclusion"></a>
+[1.Tech Stack](1.Tech Stack)
+[2.Description](2.Description)
+[3.Prerequisites](3.Prerequisites)
+[4.Run Data transformation (Jupyter Notebook)](4.Run Data transformation (Jupyter Notebook)
+[Data modeling/ E-R Diagram](Data modeling/ E-R Diagram)
+[5.Installation Guide](5.Installation Guide)
+[6.Setup Apache Airflow](6.Setup Apache Airflow)
+[7.Run the ETL pipeline](7.Run the ETL pipeline)
+[8.Verify data in Snowflake](8.Verify data in Snowflake)
+[9.Run Data Quality Checks](9.Run Data Quality Checks)
+[10.Setup Tableau for Visualization](10.Setup Tableau for Visualization)
+[11.Second: Answering Stakeholder questions](11.Second: Answering Stakeholder questions)
+[12.Fourth: Communicate with Stakeholders](12.Fourth: Communicate with Stakeholders)
+[13.Conclusion](13.Conclusion)
 
 ### Project Title:
 * End-to-End ETL Pipelining *
