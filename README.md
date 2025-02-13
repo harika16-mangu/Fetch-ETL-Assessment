@@ -1,7 +1,7 @@
 # Fetch-ETL-Pipelining
 
 ### Table of Contents
-<a name="[1.Tech Stack]</a>
+* [1.Tech Stack]
 <a name="2.Description"></a>
 <a name="3.Prerequisites"></a>
 <a name="4.Run Data transformation (Jupyter Notebook)"></a>
