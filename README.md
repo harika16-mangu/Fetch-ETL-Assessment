@@ -1,8 +1,8 @@
 # Fetch-ETL-Pipelining
 
 ### Table of Contents
-[1.Tech Stack](###-1.Tech-Stack)<br>
-[2.Description](###-2.Description)<br>
+[1.Tech Stack](###-1-Tech-Stack:)<br>
+[2.Description](###-2.Description:)<br>
 [3.Prerequisites](###-3.Prerequisites)<br>
 [4.Run Data transformation (Jupyter Notebook)](###-4.Run-Data-transformation-(Jupyter-Notebook))<br>
 [Data modeling/ E-R Diagram](###-Data-modeling/-E-R-Diagram)<br>
@@ -12,9 +12,9 @@
 [8.Verify data in Snowflake](###-8.Verify-data-in-Snowflake)<br>
 [9.Run Data Quality Checks](###-9.Run-Data-Quality-Checks)<br>
 [10.Setup Tableau for Visualization](###-10.Setup-Tableau-for-Visualization)<br>
-[11.Second: Answering Stakeholder questions](###-11.Second:-Answering-Stakeholder-questions)<br>
-[12.Fourth: Communicate with Stakeholders](###-12.Fourth:-Communicate-with-Stakeholders)<br>
-[13.Conclusion](###-Conclusion)<br>
+[11.Second: Answering Stakeholder questions](###-11.Second:Answering-Stakeholder-questions)<br>
+[12.Fourth: Communicate with Stakeholders](###-12.Fourth:Communicate-with-Stakeholders)<br>
+[13.Conclusion](###-13.Conclusion)<br>
 
 ### Project Title:
 * End-to-End ETL Pipelining *
@@ -71,7 +71,7 @@ Please refer to E-R Diagram for detailed understanding of entities and relations
 ![Image](https://github.com/user-attachments/assets/06d94ab0-39d0-4114-a8cf-4628d12a1a2c)
 
 ### 7.Run the ETL Pipeline
-**Note:**The file paths in this project are configured for a WSL environment (e.g., /mnt/c/Users/<your_username>/Downloads/fetch/...). Please update these paths in the CSV_FILES dictionary in the upload_to_snowflake DAG to match the location of your CSV files on your local machine.
+**Note:** The file paths in this project are configured for a WSL environment (e.g., /mnt/c/Users/<your_username>/Downloads/fetch/...). Please update these paths in the CSV_FILES dictionary in the upload_to_snowflake DAG to match the location of your CSV files on your local machine.
 If you’re using WSL, ensure you include the /mnt/c/ prefix to access Windows directories.
 If you’re not using WSL, provide absolute paths based on your operating system's directory structure.<br>
 Once Airflow is running, trigger the ETL DAG from the UI.<br>
