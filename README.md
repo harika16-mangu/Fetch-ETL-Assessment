@@ -12,8 +12,9 @@
 <a name="8.Verify data in Snowflake"></a>
 <a name="9.Run Data Quality Checks"></a>
 <a name="10.Setup Tableau for Visualization"></a>
-<a name="11.Answering Stakeholder questions"></a>
-<a name="12.Conclusion"></a>
+<a name="11.Second: Answering Stakeholder questions"></a>
+<a name="12.Fourth: Communicate with Stakeholders"></a>
+<a name="13.Conclusion"></a>
 
 ### Project Title:
 * End-to-End ETL Pipelining *
@@ -93,11 +94,16 @@ For full quality checks, please refer to **SQL_queries/Data Quality Checks/** fo
 4. Select the ANALYTICS database & PUBLIC schema<br>
 5. Please check the visualizations and dashboard created<br>
 
-### 11.Answering Stakeholder questions
+### 11.Second: Answering Stakeholder questions
  *Write queries that directly answer predetermined questions from a business stakeholder*
  Please find the queries answering the business stakeholders in folder **SQL_queries/Stakeholders_Questions/**
 
-### 12.Conclusion:<br>
+ ### 12.Fourth: Communicate with Stakeholders
+*Construct an email or slack message that is understandable to a product or business leader.*<br>
+Please find the email attachment to business stakeholders in **main/Gmail - Fetch Rewards Project_ Data Assessment Summary**
+
+
+### 13.Conclusion:<br>
 This ETL pipeline successfully extracts, transforms, and loads data into Snowflake while ensuring data quality. The final dashboard in Tableau provides meaningful insights into user and brand and rewards activity.<br>
 
 
