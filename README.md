@@ -25,14 +25,14 @@
 4. Tableau
 
 ### 2.Description:
-This project demonstrates the ETL pipeline that extract data from raw json files to driving business insights and recommendations
+This project demonstrates the ETL pipeline that extract data from raw json files to driving business insights and recommendations<br>
 Workflow:
 1. Data Integration: Extracted data from JSON sources and transformed/normalized it to structured CSV files using Python in Jupyter notebook.<br>
 2. Data Orchestration: Utilized Apache Airflow to orchestrate the structured normalized CSV files through scheduled ETL pipelines to Snowflake.<br>
 3. Data Warehousing & Transformation: Stored, transformed, and performed data quality checks and basic data analysis using SQL in Snowflake.<br>
 4. Visualization & Dashboarding: Visualized the transformed data and created interactive dashboards using Tableau.<br>
 
-**Please check the Architecture_Workflow diagram for detailed workflow** -Refer Architecture_Workflow diagram
+**Please check the Architecture_Workflow diagram for detailed workflow** -Refer main/Architecture_Workflow diagram.gif
 
 ### 3.Prerequisites
 Install Required Tools
@@ -52,16 +52,6 @@ Install Required Tools
 Please refer to E-R Diagram for detailed understanding of entities and relationships between tables
 
 ### 5.Installation Guide
-<<<<<<< HEAD
-1. Clone the Repository
-![Cloning Git Repo in WSL](image.png)
-![current directory](image-1.png)
-2. Create and Activate a Virtual Environment
-![Virtual Environment](image-2.png)
-3. Install Dependencies
-![Install Dependencies](image-3.png)
-![alt text](image.png)
-=======
 1. Clone the Repository<br>
 ![Image](https://github.com/user-attachments/assets/97a1d43f-c61d-46d5-b581-c24fd6a03fa0)
 ![Image](https://github.com/user-attachments/assets/2db4800d-0444-4de5-9ca9-8bb80eef60df)
@@ -70,7 +60,6 @@ Please refer to E-R Diagram for detailed understanding of entities and relations
 3. Install Dependencies<br>
 ![Image](https://github.com/user-attachments/assets/4e633e39-1d85-4e72-a94d-0c06449bb3f3)
 
->>>>>>> ca68d4a203c365e6e2473464c43acab928d6155a
 
 ### 6.Setup Apache Airflow
 1. Initialize Airflow<br>
@@ -81,6 +70,9 @@ Please refer to E-R Diagram for detailed understanding of entities and relations
 ![Image](https://github.com/user-attachments/assets/06d94ab0-39d0-4114-a8cf-4628d12a1a2c)
 
 ### 7.Run the ETL Pipeline
+**Note:**The file paths in this project are configured for a WSL environment (e.g., /mnt/c/Users/<your_username>/Downloads/fetch/...). Please update these paths in the CSV_FILES dictionary in the upload_to_snowflake DAG to match the location of your CSV files on your local machine.
+If you’re using WSL, ensure you include the /mnt/c/ prefix to access Windows directories.
+If you’re not using WSL, provide absolute paths based on your operating system's directory structure.<br>
 Once Airflow is running, trigger the ETL DAG from the UI.<br>
 1. Open Airflow UI at http://localhost:8080<br>
 2. Find the DAG named ETL<br>
