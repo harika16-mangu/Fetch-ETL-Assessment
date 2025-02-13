@@ -3,9 +3,9 @@
 ### Table of Contents
 [1.Tech Stack](#1tech-stack)<br>
 [2.Description](#2description)<br>
-[3.Prerequisites](#3prerequisites)
+[3.Prerequisites](#3prerequisites)<br>
 [4.Run Data transformation (Jupyter Notebook)](#4run-data-transformation-jupyter-notebook)<br>
-[Data modeling/ E-R Diagram](###-Data-modeling/-E-R-Diagram)<br>
+[Data modeling/ E-R Diagram](#data-modeling-e-r-diagram)<br>
 [5.Installation Guide](#5installation-guide)<br>
 [6.Setup Apache Airflow](#6setup-apache-airflow)<br>
 [7.Run the ETL pipeline](#7run-the-etl-pipeline)<br>
