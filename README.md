@@ -15,7 +15,7 @@
 [11.Second: Answering Stakeholder questions](#11second-answering-stakeholder-questions)<br>
 [12.Fourth: Communicate with Stakeholders](#12fourth-communicate-with-stakeholders)<br>
 [13.Conclusion](#13conclusion)<br>
-[14.Future Scope:](#14future-scope)
+[14.Future Scope](#14future-scope)
 
 ### Project Title:
 * End-to-End ETL Pipelining *
