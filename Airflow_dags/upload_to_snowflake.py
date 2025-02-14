@@ -8,7 +8,7 @@ import logging
 # DAG default arguments
 default_args = {
     'owner': 'airflow',
-    'start_date': datetime(2024, 1, 1),
+    'start_date': datetime(2025, 1, 1),
     'retries': 0
 }
 dag = DAG(
@@ -55,42 +55,31 @@ def convert_value(value):
 #Uploading CSV to snowflake 
 #This creates tables
 def upload_to_snowflake(file_key):
+    ''' Uploading CSV files to snowflake using COPY INTO command.'''
     snowflake_hook=SnowflakeHook(snowflake_conn_id='snowflake_default_final')
-    df=pd.read_csv(CSV_FILES[file_key])
+    stage_name='my_internal_stage'
+    file_path=CSV_FILES[file_key]
+    #uploading files to stage
+    put_command=f"PUT 'file://{file_path}'@{stage_name};"
+    try:
+        snowflake_hook.run(put_command)
+        logging.info(f"File {file_path} successfully staged in {stage_name}.")
+         # COPY INTO command to load data from stage to table
+        copy_command = f"""
+        COPY INTO {SNOWFLAKE_TABLES[file_key]}
+        FROM @{stage_name}/{file_key}.csv
+        FILE_FORMAT = (TYPE = 'CSV' FIELD_OPTIONALLY_ENCLOSED_BY = '"' SKIP_HEADER = 1);
+        """
+        snowflake_hook.run(copy_command)
+        logging.info(f"Data successfully loaded into {SNOWFLAKE_TABLES[file_key]} using COPY INTO.")
+    except Exception as e:
+        logging.error(f"Error occurred while loading data for {file_key}: {str(e)}")
+
     #  Ensure datetime columns are in correct format
-    for col in df.columns:
-        if 'date' in col.lower() or 'time' in col.lower():
-            df[col] = pd.to_datetime(df[col], errors='coerce')  # Convert to datetime
+    #for col in df.columns:
+        #if 'date' in col.lower() or 'time' in col.lower():
+            #df[col] = pd.to_datetime(df[col], errors='coerce')  # Convert to datetime
 
-    # Convert data to correct types before sending to Snowflake
-    data = [tuple(convert_value(value) for value in row) for row in df.itertuples(index=False, name=None)]
-    
-    if data:
-        logging.info(f"First row of {file_key}: {data[0]}")
-    else:
-        logging.warning(f"WARNING: No data found for {file_key}!")
-
-#Insering the values into the tables
-    if file_key=="users":
-        query=f"INSERT INTO {SNOWFLAKE_TABLES[file_key]} (user_id,active,role,signUpSource,state,createdDate,lastLogin) VALUES (%s,%s,%s,%s,%s,%s,%s)"
-    elif file_key=="brands":
-        query=f"Insert into {SNOWFLAKE_TABLES[file_key]}(brand_id,barcode,brandCode,category,categoryCode,cpg_id,name,topBrand) VALUES (%s,%s,%s,%s,%s,%s,%s,%s)"
-    elif file_key=="receipts":
-        query=f"Insert into {SNOWFLAKE_TABLES[file_key]} (receipt_id,userId,bonusPointsEarned,pointsEarned,purchasedItemCount,totalSpent,rewardsReceiptStatus,createDate,dateScanned,finishedDate,modifyDate,pointsAwardedDate,purchaseDate) values (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
-    elif file_key=="products":
-        query=f"insert into {SNOWFLAKE_TABLES[file_key]} (barcode,description,itemPrice,targetPrice,discountedItemPrice,finalPrice,competitiveProduct,needsFetchReview,needsFetchReviewReason,product_id) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
-    elif file_key=='rewards':
-        query=f"insert into {SNOWFLAKE_TABLES[file_key]} (rewardsProductPartnerId,rewardsGroup,pointsEarned,pointsPayerId,pointsNotAwardedReason,reward_id) values (%s,%s,%s,%s,%s,%s)"
-    elif file_key=="user_flagged":
-        query= f"insert into {SNOWFLAKE_TABLES[file_key]} (userFlaggedBarcode,userFlaggedDescription,userFlaggedPrice,userFlaggedQuantity,userFlaggedNewItem,user_flagged_id) values (%s,%s,%s,%s,%s,%s)"
-    elif file_key=="items":
-        query= f"insert into {SNOWFLAKE_TABLES[file_key]} (receipt_id,barcode,partnerItemId,preventTargetGapPoints,quantityPurchased,userFlaggedBarcode,originalReceiptItemText,originalFinalPrice,originalMetaBriteBarcode,rewardsProductPartnerId) values (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
-    elif file_key=="metabrite":
-        query= f"insert into {SNOWFLAKE_TABLES[file_key]} (originalMetaBriteBarcode,originalMetaBriteDescription,originalMetaBriteItemPrice,originalMetaBriteQuantityPurchased,metabrite_id) values (%s,%s,%s,%s,%s)"
-
-
-    for row in data:
-        snowflake_hook.run(query,parameters=row)
 
 # Defining Airflow Tasks
 for file_key in CSV_FILES.keys():
