@@ -109,9 +109,9 @@ This ETL pipeline successfully extracts, transforms, and loads data into Snowfla
 
 ### 14.Future Scope
 **Customer Behavior Insights:**
-Analyze customer purchase frequency, retention rates, and loyalty by tracking user activity, points earned and redeemtions. This helps in understanding buying patterns and conducting loyalty programs.
+Analyze customer purchase frequency, retention rates, and loyalty by tracking user activity, points earned and redeemtions. This helps in understanding buying patterns and conducting loyalty programs.<br>
 **Recommendation Systems:**
-Build product recommendation models using collaborative filtering or content-based filtering. This enhances user experience by providing personalized product suggestions based on past purchases.
+Build product recommendation models using collaborative filtering or content-based filtering. This enhances user experience by providing personalized product suggestions based on past purchases.<br>
 
 
 **Contact**<br>
