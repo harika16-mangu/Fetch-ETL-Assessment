@@ -15,6 +15,7 @@
 [11.Second: Answering Stakeholder questions](#11second-answering-stakeholder-questions)<br>
 [12.Fourth: Communicate with Stakeholders](#12fourth-communicate-with-stakeholders)<br>
 [13.Conclusion](#13conclusion)<br>
+[14.Future Scope:](#14future-scope)
 
 ### Project Title:
 * End-to-End ETL Pipelining *
@@ -106,7 +107,11 @@ Please find the email attachment to business stakeholders in **main/Gmail - Fetc
 ### 13.Conclusion:<br>
 This ETL pipeline successfully extracts, transforms, and loads data into Snowflake while ensuring data quality. The final dashboard in Tableau provides meaningful insights into user and brand and rewards activity.<br>
 
-
+### 14.Future Scope
+**Customer Behavior Insights:**
+Analyze customer purchase frequency, retention rates, and loyalty by tracking user activity, points earned and redeemtions. This helps in understanding buying patterns and conducting loyalty programs.
+**Recommendation Systems:**
+Build product recommendation models using collaborative filtering or content-based filtering. This enhances user experience by providing personalized product suggestions based on past purchases.
 
 
 **Contact**<br>
